@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sonora Biodiversity</title>
+
+<style>
+body{
+  background:#111;
+  color:white;
+  font-family:Arial, sans-serif;
+  text-align:center;
+}
+
+h1{
+  margin:30px 0 10px;
+}
+
+.grid{
+  width:800px;
+  margin:20px auto;
+  border:2px solid white;
+}
+
+.row{
+  display:flex;
+}
+
+.cell{
+  flex:1;
+  border:1px solid white;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.number{
+  background:black;
+  padding:5px 10px;
+  font-weight:bold;
+}
+
+.green{ color:#7CFF88; }
+.red{ color:#FF6B6B; }
+.yellow{ color:#FFD24A; }
+.blue{ color:#79A8FF; }
+.cyan{ color:#75D7FF; }
+
+.icon{
+  width:70px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Sonora is extremely rich in biodiversity.</h1>
+<p>Despite being very hot and dry, there is a lot of life!</p>
+<p><b>Counting around:</b></p>
+
+<div class="grid">
+
+  <div class="row">
+    <div class="cell">
+      <div>
+        <span class="number green">3,500</span> species of plants
+      </div>
+      <img src="icons/tree.png" class="icon">
+    </div>
+    <div class="cell">
+      <div>
+        <span class="number red">60</span> species of mammals
+      </div>
+      <img src="icons/dog.png" class="icon">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell">
+      <div>
+        <span class="number yellow">1,000</span> species of bees
+      </div>
+      <img src="icons/bee.png" class="icon">
+    </div>
+    <div class="cell">
+      <div>
+        <span class="number cyan">30</span> species native fish
+      </div>
+      <img src="icons/fish.png" class="icon">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell">
+      <div>
+        <span class="number blue">500</span> species of birds
+      </div>
+      <img src="icons/bird.png" class="icon">
+    </div>
+    <div class="cell">
+      <div>
+        <span class="number green">20</span> species of amphibians
+      </div>
+      <img src="icons/frog.png" class="icon">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell">
+      <div>
+        <span class="number green">100</span> species of reptiles
+      </div>
+      <img src="icons/reptile.png" class="icon">
+    </div>
+    <div class="cell">
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
