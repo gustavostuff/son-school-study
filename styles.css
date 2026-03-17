@@ -18,11 +18,11 @@ p{
 }
 
 .grid{
-  max-width:900px;
+  max-width:700px;
   margin:20px auto;
   border:2px solid #777;
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr;
 }
 
 .cell{
@@ -52,19 +52,13 @@ p{
   height:auto;
 }
 
-/* empty cell (bottom-right) like your original layout */
 .empty{
-  opacity:0;
+  display:none;
 }
 
-/* Mobile: 1 column, and reorder to global descending */
 @media (max-width:700px){
   h1{ font-size:22px; }
   p{ font-size:18px; }
-
-  .grid{
-    grid-template-columns:1fr;
-  }
 
   .cell{
     font-size:22px;
@@ -78,17 +72,4 @@ p{
   .icon{
     width:70px;
   }
-
-  /* Global descending order on mobile:
-     3,500 -> 1,000 -> 500 -> 100 -> 60 -> 30 -> 20 */
-  .c1{ order:1; }
-  .c2{ order:2; }
-  .c3{ order:3; }
-  .c4{ order:4; }
-  .c5{ order:5; }
-  .c6{ order:6; }
-  .c7{ order:7; }
-
-  /* hide the empty cell on mobile */
-  .empty{ display:none; }
 }
